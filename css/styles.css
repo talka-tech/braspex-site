@@ -105,11 +105,19 @@ body {
 /* 1. Estilo para o Banner de Imagens (Horizontal) */
 .hero-banner {
     position: relative;
-    height: 55vh; /* ALTURA REDUZIDA PARA MELHOR PROPORÇÃO */
     width: 100%;
-    overflow: hidden;
     margin-top: 80px; /* Compensa a altura do header fixo */
+    overflow: hidden;
     background-color: #001f26; /* Cor de fundo enquanto a imagem carrega */
+    aspect-ratio: 16 / 7; /* FORÇA O BANNER A TER UM FORMATO HORIZONTAL (largura / altura) */
+}
+
+/* ... */
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agora o 'cover' vai funcionar bem, pois o formato do banner está correto */
 }
 
 .hero-slider, .hero-slide {
