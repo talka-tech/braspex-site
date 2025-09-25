@@ -41,7 +41,48 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+   <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRASPEX - Soluções Industrializadas para Instalações Prediais</title>
+    <link rel="icon" type="image/png" href="favicon-braspex.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo-braspex.png" alt="BRASPEX Logo" class="logo">
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="dropdown">
+                        <a href="#kits" class="nav-link dropdown-toggle">Nossos Kits <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="#kit-agua" class="dropdown-item">🔵 Água Fria e Quente</a>
+                            <a href="#kit-ar" class="dropdown-item">🟢 Ar-Condicionado</a>
+                            <a href="#kit-chassis" class="dropdown-item">⚙️ Chassis Metálicos</a>
+                        </div>
+                    </li>
+                    <li><a href="#fluxo" class="nav-link">Fluxo de Execução</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <button class="cta-button">Solicitar Cotação</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <section id="home" class="hero">
         <div class="hero-background">
             <div class="hero-slider">
@@ -54,76 +95,1882 @@
             </div>
             <div class="hero-overlay"></div>
         </div>
-        
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-icon">🏭</span>
-                    <span>Soluções Industrializadas</span>
-                </div>
-                
-                <h1 class="hero-title">
-                    Transformando <span class="highlight">Instalações Prediais</span> 
-                    com Tecnologia e Qualidade
-                </h1>
-                
-                <p class="hero-description">
-                    A BRASPEX revoluciona o setor com kits industrializados sob medida, 
-                    reduzindo prazos em até <strong>70%</strong> e garantindo máxima qualidade 
-                    através de processos controlados em fábrica.
-                </p>
-                
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">70%</span>
-                        <span class="stat-label">Redução de Prazo</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Testado em Fábrica</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">24h</span>
-                        <span class="stat-label">Suporte Técnico</span>
-                    </div>
-                </div>
-                
-                <div class="hero-actions">
-                    <button class="btn-primary" onclick="document.getElementById('kits').scrollIntoView({behavior: 'smooth'})">
-                        <span class="btn-icon">🔧</span>
-                        Conheça Nossos Kits
-                    </button>
-                    <button class="btn-secondary" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
-                        <span class="btn-icon">📞</span>
-                        Solicitar Cotação
-                    </button>
-                </div>
-            </div>
-            
-            <div class="hero-features">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Instalação Rápida</h3>
-                    <p>Até 3x mais rápida que métodos convencionais</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Precisão Total</h3>
-                    <p>Kits personalizados conforme projeto executivo</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Qualidade Garantida</h3>
-                    <p>Controle rigoroso e testes em ambiente fabril</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="hero-navigation">
+         <div class="hero-navigation">
             <button class="nav-dot active" data-slide="0"></button>
             <button class="nav-dot" data-slide="1"></button>
         </div>
     </section>
+
+    <section class="hero-content-section">
+        <div class="container">
+             <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-icon">🏭</span>
+                        <span>Soluções Industrializadas</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Transformando <span class="highlight">Instalações Prediais</span> 
+                        com Tecnologia e Qualidade
+                    </h1>
+                    
+                    <p class="hero-description">
+                        A BRASPEX revoluciona o setor com kits industrializados sob medida, 
+                        reduzindo prazos em até <strong>70%</strong> e garantindo máxima qualidade 
+                        através de processos controlados em fábrica.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">70%</span>
+                            <span class="stat-label">Redução de Prazo</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Testado em Fábrica</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24h</span>
+                            <span class="stat-label">Suporte Técnico</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="document.getElementById('kits').scrollIntoView({behavior: 'smooth'})">
+                            <span class="btn-icon">🔧</span>
+                            Conheça Nossos Kits
+                        </button>
+                        <button class="btn-secondary" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+                            <span class="btn-icon">📞</span>
+                            Solicitar Cotação
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instalação Rápida</h3>
+                        <p>Até 3x mais rápida que métodos convencionais</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Precisão Total</h3>
+                        <p>Kits personalizados conforme projeto executivo</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Qualidade Garantida</h3>
+                        <p>Controle rigoroso e testes em ambiente fabril</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="vantagens">
+        <div class="container">
+            <h2 class="section-title">Vantagens dos Kits Braspex</h2>
+            <div class="vantagens-grid">
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">🔒</div>
+                    <h3>Segurança e Rastreabilidade</h3>
+                    <p>Todos os componentes são rastreáveis e seguros</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">⚡</div>
+                    <h3>Agilidade</h3>
+                    <p>Instalação até 3x mais rápida que sistemas convencionais</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">📐</div>
+                    <h3>Padronização</h3>
+                    <p>Todos os kits seguem altura e posicionamento de projeto</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">🏭</div>
+                    <h3>Qualidade em Fábrica</h3>
+                    <p>Montagem controlada e testada antes da entrega</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">🔧</div>
+                    <h3>Menos Retrabalho</h3>
+                    <p>Reduz erros de instalação e improvisos em campo</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">♻️</div>
+                    <h3>Redução de Desperdícios</h3>
+                    <p>Cortes exatos, sem sobras ou perdas</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">👥</div>
+                    <h3>Otimização de Mão de Obra</h3>
+                    <p>Montagem facilitada com suporte técnico completo</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">🎯</div>
+                    <h3>Suporte Técnico</h3>
+                    <p>Desde a concepção até a entrega</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parceiros">
+        <div class="container">
+            <h2 class="section-title">Nossos Parceiros</h2>
+            <div class="parceiros-carousel">
+                <div class="parceiros-track" id="parceiros-track">
+                    <img src="parceiro1.png" alt="Parceiro 1" class="parceiro-logo">
+                    <img src="parceiro2.png" alt="Parceiro 2" class="parceiro-logo">
+                    <img src="parceria3.png" alt="Parceiro 3" class="parceiro-logo">
+                    <img src="parceria4.png" alt="Parceiro 4" class="parceiro-logo">
+                    <img src="parceria5.png" alt="Parceiro 5" class="parceiro-logo">
+                    <img src="parceiro1.png" alt="Parceiro 1" class="parceiro-logo">
+                    <img src="parceiro2.png" alt="Parceiro 2" class="parceiro-logo">
+                    <img src="parceria3.png" alt="Parceiro 3" class="parceiro-logo">
+                    <img src="parceria4.png" alt="Parceiro 4" class="parceiro-logo">
+                    <img src="parceria5.png" alt="Parceiro 5" class="parceiro-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparacao">
+        <div class="container">
+            <h2 class="section-title">Comparação de Prazos</h2>
+            <div class="comparacao-container">
+                <div class="comparacao-image-container">
+                    <img src="grafico.png" alt="Gráfico de Comparação" class="comparacao-img active" id="img1">
+                    <img src="comparacao-tradicionalxprazo.png" alt="Comparação Tradicional vs Braspex" class="comparacao-img" id="img2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kits" class="kits">
+        <div class="container">
+            <h2 class="section-title">Nossos Kits Industrializados</h2>
+            <p class="section-description">
+                Os kits industrializados da Braspex são conjuntos prontos para instalação, montados em fábrica com 
+                alto padrão técnico e entregues conforme o projeto executivo da obra. Cada kit é desenvolvido de 
+                forma personalizada, garantindo compatibilidade com os sistemas prediais especificados.
+            </p>
+            
+            <div class="kits-showcase">
+                <img src="kitsbraspex.png" alt="Kits Braspex" class="kits-main-image">
+            </div>
+
+            <div class="kit-tabs">
+                <button class="kit-tab active" data-kit="agua">
+                    <span class="kit-tab-icon">🔵</span>
+                    <span>Água Fria e Quente</span>
+                </button>
+                <button class="kit-tab" data-kit="ar">
+                    <span class="kit-tab-icon">🟢</span>
+                    <span>Ar-Condicionado</span>
+                </button>
+                <button class="kit-tab" data-kit="chassis">
+                    <span class="kit-tab-icon">⚙️</span>
+                    <span>Chassis Metálicos</span>
+                </button>
+            </div>
+
+            <div class="kit-content">
+                <div class="kit-panel active" id="kit-agua-content">
+                    <div class="kit-panel-header">
+                        <h3>Kits de Água Fria e Quente</h3>
+                        <p>Sistemas com tubos PERT ou PPR para instalações hidráulicas, oferecendo máxima durabilidade e eficiência.</p>
+                    </div>
+                    <div class="kit-gallery">
+                        <div class="kit-item" onclick="openImageModal('imagemppr.jpg.png', 'Kit PPR - Polipropileno Copolímero Random')">
+                            <div class="kit-item-image">
+                                <img src="imagemppr.jpg.png" alt="Kit PPR" class="kit-image-large">
+                                <div class="kit-overlay">
+                                    <span class="zoom-icon">🔍</span>
+                                    <span>Clique para ampliar</span>
+                                </div>
+                            </div>
+                            <div class="kit-item-info">
+                                <h4>PPR</h4>
+                                <p>Polipropileno Copolímero Random para sistemas de água quente e fria</p>
+                            </div>
+                        </div>
+                        <div class="kit-item" onclick="openImageModal('imagempert.png', 'Kit PERT - Polyethylene of Raised Temperature')">
+                            <div class="kit-item-image">
+                                <img src="imagempert.png" alt="Kit PERT" class="kit-image-large">
+                                <div class="kit-overlay">
+                                    <span class="zoom-icon">🔍</span>
+                                    <span>Clique para ampliar</span>
+                                </div>
+                            </div>
+                            <div class="kit-item-info">
+                                <h4>PERT</h4>
+                                <p>Polyethylene of Raised Temperature para instalações hidráulicas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kit-panel" id="kit-ar-content">
+                    <div class="kit-panel-header">
+                        <h3>Kits de Ar-Condicionado</h3>
+                        <p>Multicamada AirTechno para sistemas de climatização, garantindo máxima eficiência energética.</p>
+                    </div>
+                    <div class="kit-gallery">
+                        <div class="kit-item" onclick="openImageModal('multicamadaairtecno.png', 'Kit AirTechno - Sistema Multicamada')">
+                            <div class="kit-item-image">
+                                <img src="multicamadaairtecno.png" alt="Kit AirTechno" class="kit-image-large">
+                                <div class="kit-overlay">
+                                    <span class="zoom-icon">🔍</span>
+                                    <span>Clique para ampliar</span>
+                                </div>
+                            </div>
+                            <div class="kit-item-info">
+                                <h4>AirTechno Multicamada</h4>
+                                <p>Sistema multicamada para ar-condicionado com alta resistência e flexibilidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kit-panel" id="kit-chassis-content">
+                    <div class="kit-panel-header">
+                        <h3>Chassis Metálicos Industriais</h3>
+                        <p>Para chuveiros, aquecedores industriais e travessas, com estrutura robusta e acabamento premium.</p>
+                    </div>
+                    <div class="kit-gallery">
+                        <div class="kit-item" onclick="openImageModal('chassismetalicos.png', 'Chassis Metálicos Industriais')">
+                            <div class="kit-item-image">
+                                <img src="chassismetalicos.png" alt="Chassis Metálicos" class="kit-image-large">
+                                <div class="kit-overlay">
+                                    <span class="zoom-icon">🔍</span>
+                                    <span>Clique para ampliar</span>
+                                </div>
+                            </div>
+                            <div class="kit-item-info">
+                                <h4>Chassis Metálicos</h4>
+                                <p>Estruturas metálicas para chuveiros, aquecedores e travessas industriais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-caption">
+                <p id="modalCaption"></p>
+            </div>
+        </div>
+    </div>
+
+    <section id="fluxo" class="fluxo">
+        <div class="container">
+            <h2 class="section-title">Como Trabalhamos</h2>
+            <p class="section-description">
+                Nosso processo é estruturado para garantir máxima qualidade e eficiência em cada etapa. 
+                Clique em cada etapa para conhecer os detalhes.
+            </p>
+            
+            <div class="fluxo-interactive">
+                <div class="fluxo-steps">
+                    <div class="step-item active" data-step="1">
+                        <div class="step-circle">
+                            <span class="step-number">1</span>
+                            <div class="step-icon">📋</div>
+                        </div>
+                        <h4>Recebimento do Projeto</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="2">
+                        <div class="step-circle">
+                            <span class="step-number">2</span>
+                            <div class="step-icon">🔧</div>
+                        </div>
+                        <h4>Compatibilização Técnica</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="3">
+                        <div class="step-circle">
+                            <span class="step-number">3</span>
+                            <div class="step-icon">🏭</div>
+                        </div>
+                        <h4>Produção em Fábrica</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="4">
+                        <div class="step-circle">
+                            <span class="step-number">4</span>
+                            <div class="step-icon">✅</div>
+                        </div>
+                        <h4>Teste de Qualidade</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="5">
+                        <div class="step-circle">
+                            <span class="step-number">5</span>
+                            <div class="step-icon">🚚</div>
+                        </div>
+                        <h4>Entrega Rastreável</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="6">
+                        <div class="step-circle">
+                            <span class="step-number">6</span>
+                            <div class="step-icon">🛠️</div>
+                        </div>
+                        <h4>Suporte Técnico</h4>
+                    </div>
+                </div>
+                
+                <div class="step-details">
+                    <div class="step-detail active" id="step-1">
+                        <div class="detail-content">
+                            <h3>Recebimento do Projeto Executivo</h3>
+                            <p>Nossa equipe técnica realiza uma análise detalhada do projeto executivo para compreender todas as especificações, requisitos técnicos e particularidades da obra.</p>
+                            <ul>
+                                <li>Análise completa do projeto hidráulico</li>
+                                <li>Identificação de pontos críticos</li>
+                                <li>Levantamento de materiais necessários</li>
+                                <li>Cronograma preliminar de execução</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: 2-3 dias úteis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-2">
+                        <div class="detail-content">
+                            <h3>Compatibilização Técnica e Detalhamento</h3>
+                            <p>Desenvolvimento personalizado dos kits conforme as necessidades específicas do projeto, garantindo total compatibilidade com os sistemas prediais.</p>
+                            <ul>
+                                <li>Compatibilização com outros sistemas</li>
+                                <li>Detalhamento técnico dos kits</li>
+                                <li>Especificação de materiais</li>
+                                <li>Aprovação do cliente</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: 3-5 dias úteis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-3">
+                        <div class="detail-content">
+                            <h3>Produção em Fábrica</h3>
+                            <p>Fabricação dos kits em ambiente controlado, seguindo rigorosos padrões de qualidade e utilizando equipamentos de última geração.</p>
+                            <ul>
+                                <li>Ambiente controlado de produção</li>
+                                <li>Equipamentos de alta precisão</li>
+                                <li>Controle de qualidade contínuo</li>
+                                <li>Rastreabilidade de componentes</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: 5-10 dias úteis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-4">
+                        <div class="detail-content">
+                            <h3>Teste de Montagem e Checklist</h3>
+                            <p>Verificação completa de todos os componentes e teste de montagem para garantir perfeito funcionamento antes da entrega.</p>
+                            <ul>
+                                <li>Teste de pressão hidráulica</li>
+                                <li>Verificação de conexões</li>
+                                <li>Checklist de qualidade</li>
+                                <li>Documentação técnica</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: 1-2 dias úteis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-5">
+                        <div class="detail-content">
+                            <h3>Entrega Rastreável e Pronta</h3>
+                            <p>Kits prontos para instalação imediata, com embalagem adequada e sistema de rastreamento completo para acompanhamento da entrega.</p>
+                            <ul>
+                                <li>Embalagem protegida e identificada</li>
+                                <li>Sistema de rastreamento</li>
+                                <li>Documentação completa</li>
+                                <li>Manual de instalação</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: Conforme logística</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-6">
+                        <div class="detail-content">
+                            <h3>Suporte Técnico na Obra</h3>
+                            <p>Acompanhamento técnico especializado durante a instalação, quando necessário, garantindo a correta implementação dos kits.</p>
+                            <ul>
+                                <li>Suporte técnico especializado</li>
+                                <li>Acompanhamento da instalação</li>
+                                <li>Resolução de dúvidas</li>
+                                <li>Garantia de funcionamento</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: Sob demanda</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fluxo-summary">
+                <div class="summary-card">
+                    <h4>Tempo Total do Processo</h4>
+                    <p class="summary-time">12-20 dias úteis</p>
+                    <p>Do recebimento do projeto à entrega dos kits</p>
+                </div>
+                <div class="summary-card">
+                    <h4>Economia de Tempo na Obra</h4>
+                    <p class="summary-time">Até 70%</p>
+                    <p>Comparado aos métodos tradicionais</p>
+                </div>
+                <div class="summary-card">
+                    <h4>Garantia de Qualidade</h4>
+                    <p class="summary-time">100%</p>
+                    <p>Todos os kits testados em fábrica</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="qr-section">
+        <div class="container">
+            <h2 class="section-title">Conheça Mais Sobre a Braspex</h2>
+            <p class="section-description">
+                Escaneie o QR Code para assistir a um vídeo com apresentação da empresa, 
+                kits sendo produzidos e depoimentos de clientes.
+            </p>
+            <div class="qr-container">
+                <canvas id="qr-code"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Solicite uma Cotação Personalizada</h2>
+            <div class="contato-info">
+                <div class="contato-item">
+                    <span class="contato-icon">📧</span>
+                    <span>email@braspex.com.br</span>
+                </div>
+                <div class="contato-item">
+                    <span class="contato-icon">📞</span>
+                    <span>(81) XXXX-XXXX</span>
+                </div>
+                <div class="contato-item">
+                    <span class="contato-icon">🌐</span>
+                    <span>www.braspex.com.br</span>
+                </div>
+                <div class="contato-item">
+                    <span class="contato-icon">📍</span>
+                    <span>Endereço físico, se aplicável</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo-braspex.png" alt="BRASPEX Logo" class="logo">
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#kits">Nossos Kits</a>
+                    <a href="#fluxo">Fluxo de Execução</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BRASPEX. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+/* Reset e configurações base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #2B2B2B;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #005563;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFD027;
+}
+
+.cta-button {
+    background-color: #FFD027;
+    color: #005563;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 208, 39, 0.3);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section Otimizada */
+.hero {
+    position: relative;
+    height: 60vh; /* Altura do slider */
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px; /* Compensa a altura do header fixo */
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-slide .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Overlay mais suave */
+    z-index: 2;
+}
+
+/* Hero Content Section */
+.hero-content-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-content {
+    color: #2B2B2B;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 208, 39, 0.2);
+    border: 1px solid rgba(255, 208, 39, 0.3);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.badge-icon {
+    font-size: 16px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #005563; /* Cor principal */
+}
+
+.hero-title .highlight {
+    color: #005563;
+    position: relative;
+}
+
+.hero-title .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #FFD027, #FFE680);
+    border-radius: 2px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #6C757D;
+    max-width: 600px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #005563;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #FFD027, #FFE680);
+    color: #005563;
+    box-shadow: 0 4px 20px rgba(255, 208, 39, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255, 208, 39, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #005563;
+    border: 2px solid rgba(0, 85, 99, 0.3);
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 85, 99, 0.1);
+    border-color: rgba(0, 85, 99, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    font-size: 18px;
+}
+
+/* Hero Features */
+.hero-features {
+    display: grid;
+    gap: 24px;
+}
+
+.feature-card {
+    background: #FFFFFF;
+    border: 1px solid #E5EEF0;
+    border-radius: 16px;
+    padding: 24px;
+    color: #2B2B2B;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+    background: #FFFFFF;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #005563;
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #FFD027;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.4;
+    margin: 0;
+    color: #6C757D;
+}
+
+/* Hero Navigation */
+.hero-navigation {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 4;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-dot.active {
+    background: #FFD027;
+    border-color: #FFD027;
+    transform: scale(1.2);
+}
+
+.nav-dot:hover {
+    border-color: #FFD027;
+}
+
+
+/* Vantagens Section */
+.vantagens {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #005563;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.vantagens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.vantagem-card {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #E5EEF0;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.vantagem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.vantagem-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.vantagem-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 15px;
+}
+
+.vantagem-card p {
+    color: #6C757D;
+    line-height: 1.6;
+}
+
+/* Parceiros Section */
+.parceiros {
+    padding: 80px 0;
+    background-color: #F8F9FA;
+}
+
+.parceiros-carousel {
+    overflow: hidden;
+    margin-top: 40px;
+    position: relative;
+}
+
+.parceiros-track {
+    display: flex;
+    animation: scroll 25s linear infinite;
+    gap: 80px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.parceiro-logo {
+    height: 60px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(0.7);
+    transition: all 0.3s ease;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.parceiro-logo:hover {
+    filter: grayscale(0%) brightness(1);
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Pause animation on hover */
+.parceiros-carousel:hover .parceiros-track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Comparação Section */
+.comparacao {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.comparacao-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.comparacao-image-container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+}
+
+.comparacao-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.comparacao-img.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* Kits Section */
+.kits {
+    padding: 80px 0;
+    background-color: #F8F9FA;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #6C757D;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.7;
+}
+
+.kits-showcase {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.kits-main-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Kit Tabs */
+.kit-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.kit-tab {
+    background: #FFFFFF;
+    border: 2px solid #E5EEF0;
+    border-radius: 12px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6C757D;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.kit-tab:hover {
+    border-color: #007A8C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 122, 140, 0.2);
+}
+
+.kit-tab.active {
+    background: #005563;
+    border-color: #005563;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 85, 99, 0.3);
+}
+
+.kit-tab-icon {
+    font-size: 20px;
+}
+
+/* Kit Content */
+.kit-content {
+    margin-top: 40px;
+}
+
+.kit-panel {
+    display: none;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.kit-panel.active {
+    display: block;
+}
+
+.kit-panel-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.kit-panel-header h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #005563;
+    margin-bottom: 15px;
+}
+
+.kit-panel-header p {
+    font-size: 18px;
+    color: #6C757D;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Kit Gallery */
+.kit-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.kit-item {
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.kit-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.kit-item-image {
+    position: relative;
+    cursor: pointer;
+}
+
+.kit-image-large {
+    width: 100%;
+    height: auto; /* Altura automática para mostrar imagem inteira */
+    display: block;
+}
+
+.kit-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 85, 99, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.kit-item-image:hover .kit-overlay {
+    opacity: 1;
+}
+
+.zoom-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.kit-overlay span:last-child {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.kit-item-info {
+    padding: 25px;
+}
+
+.kit-item-info h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #005563;
+    margin-bottom: 10px;
+}
+
+.kit-item-info p {
+    color: #6C757D;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 2001;
+}
+
+.modal-close:hover {
+    color: #FFD027;
+}
+
+#modalImage {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.modal-caption {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.modal-caption p {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Fluxo Interativo */
+.fluxo {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+.fluxo-interactive {
+    margin-top: 60px;
+}
+
+.fluxo-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 140px;
+}
+
+.step-item:hover {
+    background-color: rgba(0, 85, 99, 0.05);
+    transform: translateY(-5px);
+}
+
+.step-item.active {
+    background-color: rgba(0, 85, 99, 0.1);
+}
+
+.step-circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFD027, #FFE680);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 208, 39, 0.3);
+}
+
+.step-item.active .step-circle {
+    background: linear-gradient(135deg, #005563, #007A8C);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 85, 99, 0.4);
+}
+
+.step-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #005563;
+    color: #FFFFFF;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.step-item.active .step-number {
+    background: #FFD027;
+    color: #005563;
+}
+
+.step-icon {
+    font-size: 32px;
+}
+
+.step-item h4 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2B2B2B;
+    line-height: 1.3;
+}
+
+.step-connector {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, #E5EEF0, #007A8C, #E5EEF0);
+    margin: 0 10px;
+    position: relative;
+}
+
+.step-connector::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 8px;
+    height: 8px;
+    background: #007A8C;
+    border-radius: 50%;
+}
+
+/* Step Details */
+.step-details {
+    position: relative;
+    min-height: 400px;
+}
+
+.step-detail {
+    display: none;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.step-detail.active {
+    display: block;
+}
+
+.detail-content {
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #FFD027;
+}
+
+.detail-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #005563;
+    margin-bottom: 20px;
+}
+
+.detail-content p {
+    font-size: 16px;
+    color: #6C757D;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.detail-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.detail-content li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: #2B2B2B;
+    line-height: 1.6;
+}
+
+.detail-content li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #007A8C;
+    font-weight: bold;
+}
+
+.detail-highlight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 208, 39, 0.1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 3px solid #FFD027;
+}
+
+.highlight-icon {
+    font-size: 20px;
+}
+
+.detail-highlight span:last-child {
+    font-weight: 600;
+    color: #005563;
+}
+
+/* Fluxo Summary */
+.fluxo-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.summary-card {
+    background: linear-gradient(135deg, #005563, #007A8C);
+    color: #FFFFFF;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 85, 99, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.summary-card h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.summary-time {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFD027;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.summary-card p:last-child {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* QR Section */
+.qr-section {
+    padding: 80px 0;
+    background-color: #F8F9FA;
+    text-align: center;
+}
+
+.qr-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#qr-code {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contato Section */
+.contato {
+    padding: 80px 0;
+    background-color: #005563;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.contato .section-title {
+    color: #FFFFFF;
+}
+
+.contato-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.contato-icon {
+    font-size: 24px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFD027;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #6C757D;
+    color: #6C757D;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    min-width: 220px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 12px 20px;
+    color: #2B2B2B;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover {
+    background: rgba(0, 85, 99, 0.05);
+    border-left-color: #005563;
+    color: #005563;
+    padding-left: 25px;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: #005563;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 30px 0;
+        gap: 20px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .cta-button {
+        display: none;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .hero-features {
+        margin-top: 40px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .vantagens-grid,
+    .kits-grid,
+    .contato-info {
+        grid-template-columns: 1fr;
+    }
+
+    .kit-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .kit-tab {
+        min-width: 250px;
+    }
+    
+    .kit-gallery {
+        grid-template-columns: 1fr;
+    }
+        
+    .modal-content {
+        max-width: 95%;
+        max-height: 95%;
+    }
+    
+    .modal-close {
+        top: -30px;
+        font-size: 30px;
+    }
+    
+    #modalImage {
+        max-height: 70vh;
+    }
+
+    .fluxo-steps {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .step-connector {
+        width: 2px;
+        height: 40px;
+        margin: 10px 0;
+    }
+    
+    .step-connector::after {
+        top: auto;
+        bottom: -5px;
+        right: auto;
+        left: -3px;
+    }
+    
+    .detail-content {
+        padding: 25px;
+    }
+    
+    .detail-content h3 {
+        font-size: 20px;
+    }
+    
+    .fluxo-summary {
+        grid-template-columns: 1fr;
+    }
+    
+    .summary-time {
+        font-size: 28px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .vantagem-card,
+    .kit-card {
+        padding: 20px;
+    }
+
+    .parceiros-track {
+        gap: 30px;
+    }
+
+    .parceiro-logo {
+        height: 60px;
+    }
+}
 
     <!-- Vantagens Section -->
     <section class="vantagens">
