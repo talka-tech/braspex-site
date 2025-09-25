@@ -1,4 +1,6 @@
-/* Reset e configurações base */
+/* ==========================================================================
+   Base e Configurações Globais
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ body {
     line-height: 1.6;
     color: #2B2B2B;
     overflow-x: hidden;
+    background-color: #FFFFFF;
 }
 
 .container {
@@ -18,7 +21,9 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
+/* ==========================================================================
+   Cabeçalho (Header)
+   ========================================================================== */
 .header {
     background-color: #005563;
     position: fixed;
@@ -100,24 +105,18 @@ body {
     transition: 0.3s;
 }
 
-/* --- HERO COM BANNER PROPORCIONAL E CONTEÚDO ABAIXO --- */
+/* ==========================================================================
+   Secção Hero (Banner + Conteúdo)
+   ========================================================================== */
 
-/* 1. Estilo para o Banner de Imagens (Horizontal) */
+/* 1. Banner de Imagens Horizontal */
 .hero-banner {
     position: relative;
+    height: 45vh; /* ALTURA REDUZIDA PARA UM FORMATO MAIS HORIZONTAL */
     width: 100%;
-    margin-top: 80px; /* Compensa a altura do header fixo */
+    margin-top: 80px;
     overflow: hidden;
-    background-color: #001f26; /* Cor de fundo enquanto a imagem carrega */
-    aspect-ratio: 16 / 7; /* FORÇA O BANNER A TER UM FORMATO HORIZONTAL (largura / altura) */
-}
-
-/* ... */
-
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Agora o 'cover' vai funcionar bem, pois o formato do banner está correto */
+    background-color: #001f26;
 }
 
 .hero-slider, .hero-slide {
@@ -140,7 +139,7 @@ body {
 .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Garante que a imagem inteira apareça, sem cortes */
+    object-fit: cover; /* Preenche o espaço mantendo a proporção */
 }
 
 .hero-overlay {
@@ -149,7 +148,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Overlay suave para escurecer a imagem */
+    background: rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
 
@@ -158,9 +157,9 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 4;
     display: flex;
     gap: 12px;
-    z-index: 4;
 }
 
 .nav-dot {
@@ -178,11 +177,12 @@ body {
     border-color: #FFFFFF;
 }
 
-/* 2. Estilo para a Seção de Conteúdo (Abaixo do Banner) */
+/* 2. Conteúdo Hero Abaixo do Banner */
 .hero-content-section {
     padding: 70px 0;
-    background: #005563; /* Fundo escuro da marca */
+    background: #005563;
     color: #FFFFFF;
+    overflow: hidden; /* Garante que a animação não cause scroll horizontal */
 }
 
 .hero-content-section .hero-container {
@@ -193,10 +193,6 @@ body {
     grid-template-columns: 2fr 1fr;
     gap: 60px;
     align-items: center;
-}
-
-.hero-content-section .hero-content {
-    color: #FFFFFF;
 }
 
 .hero-content-section .hero-badge {
@@ -211,6 +207,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
 }
 
 .hero-content-section .hero-title {
@@ -220,6 +218,8 @@ body {
     margin-bottom: 24px;
     color: #FFFFFF;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
 }
 
 .hero-content-section .hero-title .highlight {
@@ -231,12 +231,15 @@ body {
     line-height: 1.6;
     color: #E5EEF0;
     max-width: 600px;
-    opacity: 0.9;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
 }
 
 .hero-content-section .hero-features {
     display: grid;
     gap: 24px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.8s forwards;
 }
 
 .hero-content-section .feature-card {
@@ -244,7 +247,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     padding: 24px;
-    color: #FFFFFF;
     transition: all 0.3s ease;
 }
 
@@ -275,11 +277,10 @@ body {
     margin: 0;
 }
 
-/* Vantagens Section */
-.vantagens {
-    padding: 80px 0;
-    background-color: #FFFFFF;
-}
+
+/* ==========================================================================
+   Secções de Conteúdo (Vantagens, Parceiros, etc.)
+   ========================================================================== */
 
 .section-title {
     font-size: 36px;
@@ -287,6 +288,21 @@ body {
     color: #005563;
     text-align: center;
     margin-bottom: 60px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #6C757D;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.7;
+}
+
+/* Vantagens */
+.vantagens {
+    padding: 80px 0;
+    background-color: #FFFFFF;
 }
 
 .vantagens-grid {
@@ -322,12 +338,7 @@ body {
     margin-bottom: 15px;
 }
 
-.vantagem-card p {
-    color: #6C757D;
-    line-height: 1.6;
-}
-
-/* Parceiros Section */
+/* Parceiros */
 .parceiros {
     padding: 80px 0;
     background-color: #F8F9FA;
@@ -354,16 +365,11 @@ body {
     object-fit: contain;
     filter: grayscale(100%) brightness(0.7);
     transition: all 0.3s ease;
-    padding: 10px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .parceiro-logo:hover {
     filter: grayscale(0%) brightness(1);
     transform: scale(1.1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes scroll {
@@ -371,7 +377,7 @@ body {
     100% { transform: translateX(-50%); }
 }
 
-/* Comparação Section */
+/* Comparação e Gráfico */
 .comparacao {
     padding: 80px 0;
     background-color: #FFFFFF;
@@ -392,16 +398,8 @@ body {
     gap: 15px;
 }
 
-.chart-subtitle .vs {
-    font-weight: 700;
-    color: #005563;
-}
-
-.chart-subtitle .braspex {
-    font-weight: 700;
-    color: #FFD027;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
+.chart-subtitle .vs { font-weight: 700; color: #005563; }
+.chart-subtitle .braspex { font-weight: 700; color: #FFD027; text-shadow: 0 1px 2px rgba(0,0,0,0.1); }
 
 .chart-container {
     max-width: 900px;
@@ -421,7 +419,6 @@ body {
 .chart-label {
     text-align: right;
     font-weight: 500;
-    color: #2B2B2B;
     font-size: 16px;
 }
 
@@ -429,7 +426,6 @@ body {
     width: 100%;
     background-color: #E5EEF0;
     border-radius: 8px;
-    overflow: hidden;
 }
 
 .chart-bar {
@@ -440,7 +436,6 @@ body {
     position: relative;
     color: white;
     font-weight: 600;
-    font-size: 14px;
 }
 
 .chart-bar::after {
@@ -462,10 +457,7 @@ body {
 .chart-container.in-view .c-cronograma { width: 10%; }
 .chart-container.in-view .c-perdas { width: 80%; }
 .chart-container.in-view .c-retrabalho { width: 90%; }
-
-.chart-container.in-view .chart-bar::after {
-    opacity: 1;
-}
+.chart-container.in-view .chart-bar::after { opacity: 1; }
 
 .comparacao-visual-container {
     margin-top: 60px;
@@ -475,24 +467,14 @@ body {
 .comparacao-visual-img {
     max-width: 800px;
     width: 100%;
-    height: auto;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Kits Section */
+/* Kits */
 .kits {
     padding: 80px 0;
     background-color: #F8F9FA;
-}
-
-.section-description {
-    font-size: 18px;
-    color: #6C757D;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 60px;
-    line-height: 1.7;
 }
 
 .kits-showcase {
@@ -503,7 +485,6 @@ body {
 .kits-main-image {
     max-width: 600px;
     width: 100%;
-    height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -535,9 +516,7 @@ body {
     margin-bottom: 10px;
 }
 
-.kit-category-icon {
-    font-size: 28px;
-}
+.kit-category-icon { font-size: 28px; }
 
 .kit-category-header h3 {
     font-size: 26px;
@@ -548,7 +527,6 @@ body {
 .kit-category-description {
     font-size: 16px;
     color: #6C757D;
-    line-height: 1.6;
     max-width: 800px;
     margin-bottom: 30px;
 }
@@ -602,13 +580,7 @@ body {
     margin-bottom: 10px;
 }
 
-.kit-item-info p {
-    color: #6C757D;
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-/* Modal */
+/* Modal de Imagem */
 .modal {
     display: none;
     position: fixed;
@@ -636,7 +608,6 @@ body {
     position: relative;
     max-width: 90%;
     max-height: 90%;
-    margin: auto;
 }
 
 #modalImage {
@@ -659,7 +630,6 @@ body {
     right: 0;
     color: #FFFFFF;
     font-size: 40px;
-    font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -668,7 +638,7 @@ body {
     color: #FFD027;
 }
 
-/* Fluxo Section */
+/* Fluxo */
 .fluxo {
     padding: 80px 0;
     background-color: #FFFFFF;
@@ -684,8 +654,6 @@ body {
     align-items: flex-start;
     margin-bottom: 60px;
     position: relative;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
 .step-item {
@@ -757,13 +725,11 @@ body {
 .step-item h4 {
     font-size: 14px;
     font-weight: 600;
-    color: #2B2B2B;
-    line-height: 1.3;
 }
 
 .step-details {
     position: relative;
-    min-height: 400px;
+    min-height: 350px;
 }
 
 .step-detail {
@@ -790,12 +756,6 @@ body {
     margin-bottom: 20px;
 }
 
-.detail-content p {
-    color: #6C757D;
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-
 .fluxo-summary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -817,25 +777,20 @@ body {
     transform: translateY(-5px);
 }
 
-.summary-card h4 {
-    font-size: 16px;
-    opacity: 0.9;
-}
-
 .summary-time {
     font-size: 36px;
     font-weight: 700;
     color: #FFD027;
 }
 
-/* QR Section */
+/* QR Code */
 .qr-section {
     padding: 80px 0;
     background-color: #F8F9FA;
     text-align: center;
 }
 
-/* Contato Section */
+/* Contato */
 .contato {
     padding: 80px 0;
     background-color: #005563;
@@ -854,7 +809,7 @@ body {
     margin-top: 40px;
 }
 
-/* Footer */
+/* Rodapé (Footer) */
 .footer {
     background-color: #2B2B2B;
     color: #FFFFFF;
@@ -898,28 +853,14 @@ body {
 
 .fade-in-up {
     animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
 }
 
 /* Dropdown Menu */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-toggle {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.dropdown-arrow {
-    font-size: 12px;
-    transition: transform 0.3s ease;
-}
-
-.dropdown:hover .dropdown-arrow {
-    transform: rotate(180deg);
-}
+.dropdown { position: relative; }
+.dropdown-toggle { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+.dropdown-arrow { font-size: 12px; transition: transform 0.3s ease; }
+.dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
 
 .dropdown-menu {
     position: absolute;
@@ -949,21 +890,16 @@ body {
     padding: 12px 20px;
     color: #2B2B2B;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border-left: 3px solid transparent;
 }
 
 .dropdown-item:hover {
     background: rgba(0, 85, 99, 0.05);
-    border-left-color: #005563;
     color: #005563;
-    padding-left: 25px;
 }
 
-/* ----- RESPONSIVIDADE ----- */
-
+/* ==========================================================================
+   Responsividade (Media Queries)
+   ========================================================================== */
 @media (max-width: 1024px) {
     .hero-content-section .hero-container {
         grid-template-columns: 1fr;
@@ -988,29 +924,43 @@ body {
     .nav-menu.active { left: 0; }
     .cta-button { display: none; }
 
-    .hero-banner { height: 40vh; }
-    .hero-content-section .hero-container { grid-template-columns: 1fr; }
-    .hero-content-section .hero-title { font-size: 2.2rem; }
-    .hero-content-section .hero-description { font-size: 1.1rem; }
+    .hero-banner {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    .hero-content-section .hero-container {
+        grid-template-columns: 1fr;
+    }
+    .hero-content-section .hero-title {
+        font-size: 2.2rem;
+    }
 
     .section-title { font-size: 28px; }
-    .vantagens-grid, .contato-info, .fluxo-summary, .kit-gallery { grid-template-columns: 1fr; }
-
-    .chart-item { grid-template-columns: 1fr; gap: 10px; }
-    .chart-label { text-align: left; }
-    .chart-subtitle { flex-direction: column; gap: 5px; }
+    .vantagens-grid, .contato-info, .fluxo-summary, .kit-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .chart-label {
+        text-align: left;
+    }
+    .chart-subtitle {
+        flex-direction: column;
+        gap: 5px;
+    }
 
     .fluxo-steps { flex-direction: column; }
 
-    .footer-content { flex-direction: column; gap: 20px; text-align: center; }
-    .footer-links { flex-wrap: wrap; justify-content: center; }
-}
-
-@media (max-width: 480px) {
-    .hero-banner { height: 35vh; }
-    .hero-content-section .hero-title { font-size: 1.8rem; }
-
-    .section-title { font-size: 24px; }
-    .vantagem-card { padding: 20px; }
-    .parceiros-track { gap: 30px; }
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
