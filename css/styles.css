@@ -391,39 +391,124 @@ body {
 }
 
 /* Comparação Section */
+
 .comparacao {
     padding: 80px 0;
-    background-color: #FFFFFF;
+    background-color: #F8F9FA; /* Fundo suave para destacar */
 }
 
-.comparacao-container {
+/* Estilos do Título */
+.chart-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.chart-subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: #6C757D;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    align-items: center;
+    gap: 15px;
 }
 
-.comparacao-image-container {
+.chart-subtitle .vs {
+    font-weight: 700;
+    color: #005563;
+}
+
+.chart-subtitle .braspex {
+    font-weight: 700;
+    color: #FFD027;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Container principal do gráfico */
+.chart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.chart-item {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Coluna para o rótulo e outra para a barra */
+    gap: 20px;
+    align-items: center;
+}
+
+.chart-label {
+    text-align: right;
+    font-weight: 500;
+    color: #2B2B2B;
+    font-size: 16px;
+}
+
+.chart-bar-wrapper {
+    width: 100%;
+    background-color: #E5EEF0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chart-bar {
+    height: 35px;
+    border-radius: 8px;
+    width: 0; /* Começa com largura 0 para a animação */
+    transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1); /* Animação suave */
     position: relative;
-    max-width: 800px;
-    width: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
 }
 
-.comparacao-img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: opacity 0.5s ease;
+/* Adiciona o valor em % no final da barra */
+.chart-bar::after {
+    content: attr(data-value);
     position: absolute;
-    top: 0;
-    left: 0;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease 1s; /* Faz o texto aparecer após a barra crescer */
 }
 
-.comparacao-img.active {
+/* Cores das Barras (baseado na imagem) */
+.c-economia { background-color: #F0C96A; }
+.c-cronograma { background-color: #F4A261; }
+.c-perdas { background-color: #63B3E1; }
+.c-retrabalho { background-color: #89D19B; }
+
+
+/* Animação: Quando o container do gráfico tiver a classe 'in-view', as barras crescem */
+.chart-container.in-view .c-economia { width: 40%; }
+.chart-container.in-view .c-cronograma { width: 10%; }
+.chart-container.in-view .c-perdas { width: 80%; }
+.chart-container.in-view .c-retrabalho { width: 90%; }
+
+.chart-container.in-view .chart-bar::after {
     opacity: 1;
-    position: relative;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .chart-item {
+        grid-template-columns: 1fr; /* Rótulo fica acima da barra */
+        gap: 10px;
+    }
+    .chart-label {
+        text-align: left;
+    }
+    .chart-subtitle {
+        font-size: 20px;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
 
 /* Kits Section */
 .kits {

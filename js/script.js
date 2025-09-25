@@ -91,24 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Transição de imagens na seção de comparação
-        const img1 = document.getElementById('img1');
-        const img2 = document.getElementById('img2');
-        if (img1 && img2) {
-            let currentImage = 1;
-            setInterval(() => {
-                if (currentImage === 1) {
-                    img1.classList.remove('active');
-                    img2.classList.add('active');
-                    currentImage = 2;
-                } else {
-                    img2.classList.remove('active');
-                    img1.classList.add('active');
-                    currentImage = 1;
-                }
-            }, 3000);
-        }
-
         // Geração do QR Code
         const qrCanvas = document.getElementById('qr-code');
         if (qrCanvas && typeof QRCode !== 'undefined') {
@@ -123,17 +105,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Animações on scroll
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in-up');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Adiciona a classe 'in-view' ao container do gráfico para animar as barras
+            if (entry.target.id === 'chart-container') {
+                entry.target.classList.add('in-view');
+            } else {
+                // Mantém a animação antiga para os outros elementos
+                entry.target.classList.add('fade-in-up');
+            }
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2, rootMargin: '0px 0px -50px 0px' }); // Aumentei o threshold para 0.2 para garantir que o gráfico esteja mais visível ao animar
 
-        document.querySelectorAll('.vantagem-card, .kit-card, .timeline-item, .section-title, .feature-card, .hero-content').forEach(el => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.vantagem-card, .kit-card, .timeline-item, .section-title, .feature-card, .hero-content, #chart-container').forEach(el => {
+    observer.observe(el);
+});
 
         // Efeito hover nos cards
         const cards = document.querySelectorAll('.vantagem-card, .kit-card, .feature-card');
