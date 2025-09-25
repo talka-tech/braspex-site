@@ -39,8 +39,18 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 65px; /* Aumentamos o tamanho de 50px para 65px */
     width: auto;
+    display: block;
+    background-color: #FFD027; /* Adicionamos o fundo amarelo da marca */
+    padding: 8px;              /* Criamos um respiro interno */
+    border-radius: 12px;         /* Deixamos os cantos suavemente arredondados */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Adicionamos uma leve sombra */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Efeito sutil de crescimento ao passar o mouse */
 }
 
 .nav-menu {
