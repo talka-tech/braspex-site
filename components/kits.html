@@ -3,64 +3,61 @@
         <h2 class="section-title">Nossos Kits Industrializados</h2>
         <p class="section-description">
             Os kits industrializados da Braspex são conjuntos prontos para instalação, montados em fábrica com 
-            alto padrão técnico e entregues conforme o projeto executivo da obra. Cada kit é desenvolvido de 
-            forma personalizada, garantindo compatibilidade com os sistemas prediais especificados.
+            alto padrão técnico. Cada linha de produto é desenvolvida de forma personalizada para garantir máxima eficiência e compatibilidade.
         </p>
         
         <div class="kits-showcase">
             <img src="imagens/kitsbraspex.png" alt="Kits Braspex" class="kits-main-image">
         </div>
 
-        <div class="kit-tabs">
-            <button class="kit-tab active" data-kit="agua">
-                <span class="kit-tab-icon">🔵</span>
-                <span>Água Fria e Quente</span>
-            </button>
-            <button class="kit-tab" data-kit="ar">
-                <span class="kit-tab-icon">🟢</span>
-                <span>Ar-Condicionado</span>
-            </button>
-            <button class="kit-tab" data-kit="chassis">
-                <span class="kit-tab-icon">⚙️</span>
-                <span>Chassis Metálicos</span>
-            </button>
-        </div>
+        <div class="kits-categories-wrapper">
 
-        <div class="kit-content">
-            <div class="kit-panel active" id="kit-agua-content">
-                <div class="kit-panel-header">
+            <div class="kit-category-section" id="kit-agua">
+                <div class="kit-category-header">
+                    <span class="kit-category-icon">🔵</span>
                     <h3>Kits de Água Fria e Quente</h3>
-                    <p>Sistemas com tubos PERT ou PPR para instalações hidráulicas, oferecendo máxima durabilidade e eficiência.</p>
                 </div>
+                <p class="kit-category-description">Sistemas com tubos PERT ou PPR para instalações hidráulicas, oferecendo máxima durabilidade e eficiência.</p>
                 <div class="kit-gallery">
                     <div class="kit-item" onclick="openImageModal('imagens/imagemppr.jpg.png', 'Kit PPR - Polipropileno Copolímero Random')">
-                        <div class="kit-item-image"><img src="imagens/imagemppr.jpg.png" alt="Kit PPR" class="kit-image-large"><div class="kit-overlay"><span class="zoom-icon">🔍</span><span>Clique para ampliar</span></div></div>
-                        <div class="kit-item-info"><h4>PPR</h4><p>Polipropileno Copolímero Random para sistemas de água quente e fria</p></div>
+                        <div class="kit-item-image"><img src="imagens/imagemppr.jpg.png" alt="Kit PPR" class="kit-image-large"></div>
+                        <div class="kit-item-info"><h4>PPR</h4><p>Polipropileno Copolímero Random para sistemas de água quente e fria.</p></div>
                     </div>
                     <div class="kit-item" onclick="openImageModal('imagens/imagempert.png', 'Kit PERT - Polyethylene of Raised Temperature')">
-                        <div class="kit-item-image"><img src="imagens/imagempert.png" alt="Kit PERT" class="kit-image-large"><div class="kit-overlay"><span class="zoom-icon">🔍</span><span>Clique para ampliar</span></div></div>
-                        <div class="kit-item-info"><h4>PERT</h4><p>Polyethylene of Raised Temperature para instalações hidráulicas</p></div>
+                        <div class="kit-item-image"><img src="imagens/imagempert.png" alt="Kit PERT" class="kit-image-large"></div>
+                        <div class="kit-item-info"><h4>PERT</h4><p>Polyethylene of Raised Temperature para instalações hidráulicas.</p></div>
                     </div>
                 </div>
             </div>
-            <div class="kit-panel" id="kit-ar-content">
-                <div class="kit-panel-header"><h3>Kits de Ar-Condicionado</h3><p>Multicamada AirTechno para sistemas de climatização, garantindo máxima eficiência energética.</p></div>
+
+            <div class="kit-category-section" id="kit-ar">
+                <div class="kit-category-header">
+                    <span class="kit-category-icon">🟢</span>
+                    <h3>Kits de Ar-Condicionado</h3>
+                </div>
+                <p class="kit-category-description">Solução com Multicamada AirTechno para sistemas de climatização, garantindo máxima eficiência energética e instalação simplificada.</p>
                 <div class="kit-gallery">
                     <div class="kit-item" onclick="openImageModal('imagens/multicamadaairtecno.png', 'Kit AirTechno - Sistema Multicamada')">
-                        <div class="kit-item-image"><img src="imagens/multicamadaairtecno.png" alt="Kit AirTechno" class="kit-image-large"><div class="kit-overlay"><span class="zoom-icon">🔍</span><span>Clique para ampliar</span></div></div>
-                        <div class="kit-item-info"><h4>AirTechno Multicamada</h4><p>Sistema multicamada para ar-condicionado com alta resistência e flexibilidade</p></div>
+                        <div class="kit-item-image"><img src="imagens/multicamadaairtecno.png" alt="Kit AirTechno" class="kit-image-large"></div>
+                        <div class="kit-item-info"><h4>AirTechno Multicamada</h4><p>Sistema multicamada para ar-condicionado com alta resistência e flexibilidade.</p></div>
                     </div>
                 </div>
             </div>
-            <div class="kit-panel" id="kit-chassis-content">
-                <div class="kit-panel-header"><h3>Chassis Metálicos Industriais</h3><p>Para chuveiros, aquecedores industriais e travessas, com estrutura robusta e acabamento premium.</p></div>
+
+            <div class="kit-category-section" id="kit-chassis">
+                <div class="kit-category-header">
+                    <span class="kit-category-icon">⚙️</span>
+                    <h3>Chassis Metálicos Industriais</h3>
+                </div>
+                <p class="kit-category-description">Estruturas robustas para chuveiros, aquecedores industriais e travessas, com acabamento premium e montagem precisa.</p>
                 <div class="kit-gallery">
                     <div class="kit-item" onclick="openImageModal('imagens/chassismetalicos.png', 'Chassis Metálicos Industriais')">
-                        <div class="kit-item-image"><img src="imagens/chassismetalicos.png" alt="Chassis Metálicos" class="kit-image-large"><div class="kit-overlay"><span class="zoom-icon">🔍</span><span>Clique para ampliar</span></div></div>
-                        <div class="kit-item-info"><h4>Chassis Metálicos</h4><p>Estruturas metálicas para chuveiros, aquecedores e travessas industriais</p></div>
+                        <div class="kit-item-image"><img src="imagens/chassismetalicos.png" alt="Chassis Metálicos" class="kit-image-large"></div>
+                        <div class="kit-item-info"><h4>Chassis Metálicos</h4><p>Estruturas para chuveiros, aquecedores e travessas industriais.</p></div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

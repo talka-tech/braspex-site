@@ -142,41 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
             card.addEventListener('mouseleave', function() { this.style.transform = 'translateY(0)'; });
         });
         
-        // Funcionalidade das abas de kits
-        const kitTabs = document.querySelectorAll('.kit-tab');
-        const kitPanels = document.querySelectorAll('.kit-panel');
-        kitTabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                const targetKit = this.getAttribute('data-kit');
-                kitTabs.forEach(t => t.classList.remove('active'));
-                kitPanels.forEach(p => p.classList.remove('active'));
-                this.classList.add('active');
-                document.getElementById(`kit-${targetKit}-content`).classList.add('active');
-            });
-        });
-
-        // Navegação direta para tipos de kits
-        const dropdownItems = document.querySelectorAll('.dropdown-item');
-        dropdownItems.forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById('kits').scrollIntoView({ behavior: 'smooth', block: 'start' });
-                
-                setTimeout(() => {
-                    let tabToActivate = '';
-                    if (targetId === 'kit-agua') tabToActivate = 'agua';
-                    else if (targetId === 'kit-ar') tabToActivate = 'ar';
-                    else if (targetId === 'kit-chassis') tabToActivate = 'chassis';
-                    
-                    if (tabToActivate) {
-                        const targetTab = document.querySelector(`[data-kit="${tabToActivate}"]`);
-                        if(targetTab) targetTab.click(); // Simula o clique na aba correta
-                    }
-                }, 700); 
-            });
-        });
-
         // Hero Slider
         const slides = document.querySelectorAll('.hero-slide');
         const dots = document.querySelectorAll('.nav-dot');
