@@ -39,18 +39,18 @@ body {
 }
 
 .logo {
-    height: 65px; /* Aumentamos o tamanho de 50px para 65px */
+    height: 70px; /* Aumentamos para 70px (o máximo antes de tocar as bordas) */
     width: auto;
     display: block;
-    background-color: #FFD027; /* Adicionamos o fundo amarelo da marca */
-    padding: 8px;              /* Criamos um respiro interno */
-    border-radius: 12px;         /* Deixamos os cantos suavemente arredondados */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Adicionamos uma leve sombra */
+    background-color: #FFFFFF; /* Alterado para o fundo branco, como solicitado */
+    padding: 5px;              /* Um respiro interno menor para a logo crescer */
+    border-radius: 6px;          /* Cantos menos arredondados, para um visual mais retangular */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(1.05); /* Efeito sutil de crescimento ao passar o mouse */
+    transform: scale(1.05);
 }
 
 .nav-menu {
