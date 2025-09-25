@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRASPEX - Soluções Industrializadas para Instalações Prediais</title>
+    <link rel="icon" type="image/png" href="favicon-braspex.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo-braspex.png" alt="BRASPEX Logo" class="logo">
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="dropdown">
+                        <a href="#kits" class="nav-link dropdown-toggle">Nossos Kits <span class="dropdown-arrow">▼</span></a>
+                        <div class="dropdown-menu">
+                            <a href="#kit-agua" class="dropdown-item">🔵 Água Fria e Quente</a>
+                            <a href="#kit-ar" class="dropdown-item">🟢 Ar-Condicionado</a>
+                            <a href="#kit-chassis" class="dropdown-item">⚙️ Chassis Metálicos</a>
+                        </div>
+                    </li>
+                    <li><a href="#fluxo" class="nav-link">Fluxo de Execução</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <button class="cta-button">Solicitar Cotação</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <img src="hero-reference.png" alt="Vista aérea das instalações BRASPEX" class="hero-image">
+                </div>
+                <div class="hero-slide">
+                    <img src="galpao.png" alt="Galpão BRASPEX" class="hero-image">
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🏭</span>
+                    <span>Soluções Industrializadas</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Transformando <span class="highlight">Instalações Prediais</span> 
+                    com Tecnologia e Qualidade
+                </h1>
+                
+                <p class="hero-description">
+                    A BRASPEX revoluciona o setor com kits industrializados sob medida, 
+                    reduzindo prazos em até <strong>70%</strong> e garantindo máxima qualidade 
+                    através de processos controlados em fábrica.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">70%</span>
+                        <span class="stat-label">Redução de Prazo</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Testado em Fábrica</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Suporte Técnico</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="document.getElementById('kits').scrollIntoView({behavior: 'smooth'})">
+                        <span class="btn-icon">🔧</span>
+                        Conheça Nossos Kits
+                    </button>
+                    <button class="btn-secondary" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+                        <span class="btn-icon">📞</span>
+                        Solicitar Cotação
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-features">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instalação Rápida</h3>
+                    <p>Até 3x mais rápida que métodos convencionais</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Precisão Total</h3>
+                    <p>Kits personalizados conforme projeto executivo</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Qualidade Garantida</h3>
+                    <p>Controle rigoroso e testes em ambiente fabril</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-navigation">
+            <button class="nav-dot active" data-slide="0"></button>
+            <button class="nav-dot" data-slide="1"></button>
+        </div>
+    </section>
+
+    <!-- Vantagens Section -->
+    <section class="vantagens">
+        <div class="container">
+            <h2 class="section-title">Vantagens dos Kits Braspex</h2>
+            <div class="vantagens-grid">
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">🔒</div>
+                    <h3>Segurança e Rastreabilidade</h3>
+                    <p>Todos os componentes são rastreáveis e seguros</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">⚡</div>
+                    <h3>Agilidade</h3>
+                    <p>Instalação até 3x mais rápida que sistemas convencionais</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">📐</div>
+                    <h3>Padronização</h3>
+                    <p>Todos os kits seguem altura e posicionamento de projeto</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">🏭</div>
+                    <h3>Qualidade em Fábrica</h3>
+                    <p>Montagem controlada e testada antes da entrega</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">🔧</div>
+                    <h3>Menos Retrabalho</h3>
+                    <p>Reduz erros de instalação e improvisos em campo</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">♻️</div>
+                    <h3>Redução de Desperdícios</h3>
+                    <p>Cortes exatos, sem sobras ou perdas</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">👥</div>
+                    <h3>Otimização de Mão de Obra</h3>
+                    <p>Montagem facilitada com suporte técnico completo</p>
+                </div>
+                <div class="vantagem-card">
+                    <div class="vantagem-icon">🎯</div>
+                    <h3>Suporte Técnico</h3>
+                    <p>Desde a concepção até a entrega</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parceiros Section -->
+    <section class="parceiros">
+        <div class="container">
+            <h2 class="section-title">Nossos Parceiros</h2>
+            <div class="parceiros-carousel">
+                <div class="parceiros-track" id="parceiros-track">
+                    <img src="parceiro1.png" alt="Parceiro 1" class="parceiro-logo">
+                    <img src="parceiro2.png" alt="Parceiro 2" class="parceiro-logo">
+                    <img src="parceria3.png" alt="Parceiro 3" class="parceiro-logo">
+                    <img src="parceria4.png" alt="Parceiro 4" class="parceiro-logo">
+                    <img src="parceria5.png" alt="Parceiro 5" class="parceiro-logo">
+                    <!-- Duplicação para loop infinito -->
+                    <img src="parceiro1.png" alt="Parceiro 1" class="parceiro-logo">
+                    <img src="parceiro2.png" alt="Parceiro 2" class="parceiro-logo">
+                    <img src="parceria3.png" alt="Parceiro 3" class="parceiro-logo">
+                    <img src="parceria4.png" alt="Parceiro 4" class="parceiro-logo">
+                    <img src="parceria5.png" alt="Parceiro 5" class="parceiro-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparação Section -->
+    <section class="comparacao">
+        <div class="container">
+            <h2 class="section-title">Comparação de Prazos</h2>
+            <div class="comparacao-container">
+                <div class="comparacao-image-container">
+                    <img src="grafico.png" alt="Gráfico de Comparação" class="comparacao-img active" id="img1">
+                    <img src="comparacao-tradicionalxprazo.png" alt="Comparação Tradicional vs Braspex" class="comparacao-img" id="img2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kits Section -->
+    <section id="kits" class="kits">
+        <div class="container">
+            <h2 class="section-title">Nossos Kits Industrializados</h2>
+            <p class="section-description">
+                Os kits industrializados da Braspex são conjuntos prontos para instalação, montados em fábrica com 
+                alto padrão técnico e entregues conforme o projeto executivo da obra. Cada kit é desenvolvido de 
+                forma personalizada, garantindo compatibilidade com os sistemas prediais especificados.
+            </p>
+            
+            <div class="kits-showcase">
+                <img src="kitsbraspex.png" alt="Kits Braspex" class="kits-main-image">
+            </div>
+
+            <!-- Kit Navigation Tabs -->
+            <div class="kit-tabs">
+                <button class="kit-tab active" data-kit="agua">
+                    <span class="kit-tab-icon">🔵</span>
+                    <span>Água Fria e Quente</span>
+                </button>
+                <button class="kit-tab" data-kit="ar">
+                    <span class="kit-tab-icon">🟢</span>
+                    <span>Ar-Condicionado</span>
+                </button>
+                <button class="kit-tab" data-kit="chassis">
+                    <span class="kit-tab-icon">⚙️</span>
+                    <span>Chassis Metálicos</span>
+                </button>
+            </div>
+
+            <!-- Kit Content -->
+            <div class="kit-content">
+                <!-- Água Fria e Quente -->
+                <div class="kit-panel active" id="kit-agua">
+                    <div class="kit-panel-header">
+                        <h3>Kits de Água Fria e Quente</h3>
+                        <p>Sistemas com tubos PERT ou PPR para instalações hidráulicas, oferecendo máxima durabilidade e eficiência.</p>
+                    </div>
+                    <div class="kit-gallery">
+                        <div class="kit-item" onclick="openImageModal('imagemppr.jpg.png', 'Kit PPR - Polipropileno Copolímero Random')">
+                            <div class="kit-item-image">
+                                <img src="imagemppr.jpg.png" alt="Kit PPR" class="kit-image-large">
+                                <div class="kit-overlay">
+                                    <span class="zoom-icon">🔍</span>
+                                    <span>Clique para ampliar</span>
+                                </div>
+                            </div>
+                            <div class="kit-item-info">
+                                <h4>PPR</h4>
+                                <p>Polipropileno Copolímero Random para sistemas de água quente e fria</p>
+                            </div>
+                        </div>
+                        <div class="kit-item" onclick="openImageModal('imagempert.png', 'Kit PERT - Polyethylene of Raised Temperature')">
+                            <div class="kit-item-image">
+                                <img src="imagempert.png" alt="Kit PERT" class="kit-image-large">
+                                <div class="kit-overlay">
+                                    <span class="zoom-icon">🔍</span>
+                                    <span>Clique para ampliar</span>
+                                </div>
+                            </div>
+                            <div class="kit-item-info">
+                                <h4>PERT</h4>
+                                <p>Polyethylene of Raised Temperature para instalações hidráulicas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ar-Condicionado -->
+                <div class="kit-panel" id="kit-ar">
+                    <div class="kit-panel-header">
+                        <h3>Kits de Ar-Condicionado</h3>
+                        <p>Multicamada AirTechno para sistemas de climatização, garantindo máxima eficiência energética.</p>
+                    </div>
+                    <div class="kit-gallery">
+                        <div class="kit-item" onclick="openImageModal('multicamadaairtecno.png', 'Kit AirTechno - Sistema Multicamada')">
+                            <div class="kit-item-image">
+                                <img src="multicamadaairtecno.png" alt="Kit AirTechno" class="kit-image-large">
+                                <div class="kit-overlay">
+                                    <span class="zoom-icon">🔍</span>
+                                    <span>Clique para ampliar</span>
+                                </div>
+                            </div>
+                            <div class="kit-item-info">
+                                <h4>AirTechno Multicamada</h4>
+                                <p>Sistema multicamada para ar-condicionado com alta resistência e flexibilidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chassis Metálicos -->
+                <div class="kit-panel" id="kit-chassis">
+                    <div class="kit-panel-header">
+                        <h3>Chassis Metálicos Industriais</h3>
+                        <p>Para chuveiros, aquecedores industriais e travessas, com estrutura robusta e acabamento premium.</p>
+                    </div>
+                    <div class="kit-gallery">
+                        <div class="kit-item" onclick="openImageModal('chassismetalicos.png', 'Chassis Metálicos Industriais')">
+                            <div class="kit-item-image">
+                                <img src="chassismetalicos.png" alt="Chassis Metálicos" class="kit-image-large">
+                                <div class="kit-overlay">
+                                    <span class="zoom-icon">🔍</span>
+                                    <span>Clique para ampliar</span>
+                                </div>
+                            </div>
+                            <div class="kit-item-info">
+                                <h4>Chassis Metálicos</h4>
+                                <p>Estruturas metálicas para chuveiros, aquecedores e travessas industriais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-caption">
+                <p id="modalCaption"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fluxo de Execução Section -->
+    <section id="fluxo" class="fluxo">
+        <div class="container">
+            <h2 class="section-title">Como Trabalhamos</h2>
+            <p class="section-description">
+                Nosso processo é estruturado para garantir máxima qualidade e eficiência em cada etapa. 
+                Clique em cada etapa para conhecer os detalhes.
+            </p>
+            
+            <div class="fluxo-interactive">
+                <div class="fluxo-steps">
+                    <div class="step-item active" data-step="1">
+                        <div class="step-circle">
+                            <span class="step-number">1</span>
+                            <div class="step-icon">📋</div>
+                        </div>
+                        <h4>Recebimento do Projeto</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="2">
+                        <div class="step-circle">
+                            <span class="step-number">2</span>
+                            <div class="step-icon">🔧</div>
+                        </div>
+                        <h4>Compatibilização Técnica</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="3">
+                        <div class="step-circle">
+                            <span class="step-number">3</span>
+                            <div class="step-icon">🏭</div>
+                        </div>
+                        <h4>Produção em Fábrica</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="4">
+                        <div class="step-circle">
+                            <span class="step-number">4</span>
+                            <div class="step-icon">✅</div>
+                        </div>
+                        <h4>Teste de Qualidade</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="5">
+                        <div class="step-circle">
+                            <span class="step-number">5</span>
+                            <div class="step-icon">🚚</div>
+                        </div>
+                        <h4>Entrega Rastreável</h4>
+                    </div>
+                    
+                    <div class="step-connector"></div>
+                    
+                    <div class="step-item" data-step="6">
+                        <div class="step-circle">
+                            <span class="step-number">6</span>
+                            <div class="step-icon">🛠️</div>
+                        </div>
+                        <h4>Suporte Técnico</h4>
+                    </div>
+                </div>
+                
+                <div class="step-details">
+                    <div class="step-detail active" id="step-1">
+                        <div class="detail-content">
+                            <h3>Recebimento do Projeto Executivo</h3>
+                            <p>Nossa equipe técnica realiza uma análise detalhada do projeto executivo para compreender todas as especificações, requisitos técnicos e particularidades da obra.</p>
+                            <ul>
+                                <li>Análise completa do projeto hidráulico</li>
+                                <li>Identificação de pontos críticos</li>
+                                <li>Levantamento de materiais necessários</li>
+                                <li>Cronograma preliminar de execução</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: 2-3 dias úteis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-2">
+                        <div class="detail-content">
+                            <h3>Compatibilização Técnica e Detalhamento</h3>
+                            <p>Desenvolvimento personalizado dos kits conforme as necessidades específicas do projeto, garantindo total compatibilidade com os sistemas prediais.</p>
+                            <ul>
+                                <li>Compatibilização com outros sistemas</li>
+                                <li>Detalhamento técnico dos kits</li>
+                                <li>Especificação de materiais</li>
+                                <li>Aprovação do cliente</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: 3-5 dias úteis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-3">
+                        <div class="detail-content">
+                            <h3>Produção em Fábrica</h3>
+                            <p>Fabricação dos kits em ambiente controlado, seguindo rigorosos padrões de qualidade e utilizando equipamentos de última geração.</p>
+                            <ul>
+                                <li>Ambiente controlado de produção</li>
+                                <li>Equipamentos de alta precisão</li>
+                                <li>Controle de qualidade contínuo</li>
+                                <li>Rastreabilidade de componentes</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: 5-10 dias úteis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-4">
+                        <div class="detail-content">
+                            <h3>Teste de Montagem e Checklist</h3>
+                            <p>Verificação completa de todos os componentes e teste de montagem para garantir perfeito funcionamento antes da entrega.</p>
+                            <ul>
+                                <li>Teste de pressão hidráulica</li>
+                                <li>Verificação de conexões</li>
+                                <li>Checklist de qualidade</li>
+                                <li>Documentação técnica</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: 1-2 dias úteis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-5">
+                        <div class="detail-content">
+                            <h3>Entrega Rastreável e Pronta</h3>
+                            <p>Kits prontos para instalação imediata, com embalagem adequada e sistema de rastreamento completo para acompanhamento da entrega.</p>
+                            <ul>
+                                <li>Embalagem protegida e identificada</li>
+                                <li>Sistema de rastreamento</li>
+                                <li>Documentação completa</li>
+                                <li>Manual de instalação</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: Conforme logística</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-detail" id="step-6">
+                        <div class="detail-content">
+                            <h3>Suporte Técnico na Obra</h3>
+                            <p>Acompanhamento técnico especializado durante a instalação, quando necessário, garantindo a correta implementação dos kits.</p>
+                            <ul>
+                                <li>Suporte técnico especializado</li>
+                                <li>Acompanhamento da instalação</li>
+                                <li>Resolução de dúvidas</li>
+                                <li>Garantia de funcionamento</li>
+                            </ul>
+                            <div class="detail-highlight">
+                                <span class="highlight-icon">⏱️</span>
+                                <span>Prazo: Sob demanda</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fluxo-summary">
+                <div class="summary-card">
+                    <h4>Tempo Total do Processo</h4>
+                    <p class="summary-time">12-20 dias úteis</p>
+                    <p>Do recebimento do projeto à entrega dos kits</p>
+                </div>
+                <div class="summary-card">
+                    <h4>Economia de Tempo na Obra</h4>
+                    <p class="summary-time">Até 70%</p>
+                    <p>Comparado aos métodos tradicionais</p>
+                </div>
+                <div class="summary-card">
+                    <h4>Garantia de Qualidade</h4>
+                    <p class="summary-time">100%</p>
+                    <p>Todos os kits testados em fábrica</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Code Section -->
+    <section class="qr-section">
+        <div class="container">
+            <h2 class="section-title">Conheça Mais Sobre a Braspex</h2>
+            <p class="section-description">
+                Escaneie o QR Code para assistir a um vídeo com apresentação da empresa, 
+                kits sendo produzidos e depoimentos de clientes.
+            </p>
+            <div class="qr-container">
+                <canvas id="qr-code"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Solicite uma Cotação Personalizada</h2>
+            <div class="contato-info">
+                <div class="contato-item">
+                    <span class="contato-icon">📧</span>
+                    <span>email@braspex.com.br</span>
+                </div>
+                <div class="contato-item">
+                    <span class="contato-icon">📞</span>
+                    <span>(81) XXXX-XXXX</span>
+                </div>
+                <div class="contato-item">
+                    <span class="contato-icon">🌐</span>
+                    <span>www.braspex.com.br</span>
+                </div>
+                <div class="contato-item">
+                    <span class="contato-icon">📍</span>
+                    <span>Endereço físico, se aplicável</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo-braspex.png" alt="BRASPEX Logo" class="logo">
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#kits">Nossos Kits</a>
+                    <a href="#fluxo">Fluxo de Execução</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BRASPEX. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
